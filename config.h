@@ -8,7 +8,7 @@ static const unsigned int alpha = 0xff;
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
 	"Jetbrains Mono:pixelsize=14:regular:antialias=true:autohint=true",
-	"JoyPixels:pixelsize=14:regular:antialias=true:autohint=true"
+	"NotoColorEmoji:pixelsize=14:regular:antialias=true:autohint=true"
 };
 static const char *prompt      = "RUN:";      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
