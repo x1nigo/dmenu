@@ -1,4 +1,4 @@
-# dmenu-x1nigo
+# x1nigo's build of dmenu
 My build of the suckless, dynamic menu.
 
 ## Patches
