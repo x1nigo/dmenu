@@ -15,9 +15,9 @@ static const char *prompt      = "Run program:";      /* -p  option; prompt to t
 static const char *colors[SchemeLast][2] = {
         /*     fg         bg       */
         [SchemeNorm] = { "#e6e6e6", "#000000" },
-        [SchemeSel] = { "#e6e6e6", "#121228" },
-        [SchemeSelHighlight] = { "#689d6a", "#121228" },
-        [SchemeNormHighlight] = { "#d79921", "#000000" },
+        [SchemeSel] = { "#e6e6e6", "#121218" },
+        [SchemeSelHighlight] = { "#26a98b", "#121228" },
+        [SchemeNormHighlight] = { "#edb54b", "#000000" },
         [SchemeOut] = { "#000000", "#00ffff" },
 };
 
@@ -32,7 +32,7 @@ static unsigned int lines      = 0;
 static unsigned int columns    = 0;
 
 /* -h option; minimum height of a menu line */
-static unsigned int lineheight = 0;
+static unsigned int lineheight = 22;
 static unsigned int min_lineheight = 8;
 
 /*
