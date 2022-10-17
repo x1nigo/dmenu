@@ -8,8 +8,8 @@ static int fuzzy = 1;                      /* -F  option; if 0, dmenu doesn't us
 static const unsigned int alpha = 0xff;
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-        "Bitstream Vera Sans Mono:pixelsize=14:regular:antialias=true:autohint=true",
-        "NotoColorEmoji:pixelsize=14:regular:antialias=true:autohint=true"
+        "Jetbrains Mono:pixelsize=14:regular:antialias=true:autohint=true",
+        "JoyPixels:pixelsize=12:regular:antialias=true:autohint=true"
 };
 static const char *prompt      = "Run program:";      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
@@ -32,7 +32,7 @@ static unsigned int lines      = 0;
 static unsigned int columns    = 0;
 
 /* -h option; minimum height of a menu line */
-static unsigned int lineheight = 22;
+static unsigned int lineheight = 0;
 static unsigned int min_lineheight = 8;
 
 /*
