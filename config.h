@@ -8,14 +8,14 @@ static int fuzzy = 1;                      /* -F  option; if 0, dmenu doesn't us
 static const unsigned int alpha = 0xff;
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-        "Fira Mono:pixelsize=14:regular:antialias=true:autohint=true",
+        "Bitstream Vera Sans Mono:pixelsize=14:regular:antialias=true:autohint=true",
         "JoyPixels:pixelsize=12:regular:antialias=true:autohint=true"
 };
 static const char *prompt      = "Run program:";      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
         /*     fg         bg       */
         [SchemeNorm] = { "#e6e6e6", "#121218" },
-        [SchemeSel] = { "#e6e6e6", "#121228" },
+        [SchemeSel] = { "#000", "#008080" },
         [SchemeSelHighlight] = { "#26a98b", "#121218" },
         [SchemeNormHighlight] = { "#edb54b", "#000000" },
         [SchemeOut] = { "#000000", "#00ffff" },
