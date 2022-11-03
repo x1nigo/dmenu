@@ -9,7 +9,7 @@ static const unsigned int alpha = 0xdf;
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
         "Bitstream Vera Sans Mono:pixelsize=14:regular:antialias=true:autohint=true",
-        "NotoColorEmoji:pixelsize=12:regular:antialias=true:autohint=true"
+        "JoyPixels:pixelsize=12:regular:antialias=true:autohint=true"
 };
 static const char *prompt      = "Run program:";      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
