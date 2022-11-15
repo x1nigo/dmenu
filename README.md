@@ -10,6 +10,7 @@ My build of the suckless, dynamic menu.
 - `gridnav` (makes navigating the grid easier)
 - `lineheight` (user can determine line height)
 - `listfullwidth` (adds colors/indentation with the prompt)
+- `mousesupport` (adds selection via mouse)
 
 ## Requirements
 - `libxft-bgra` - You need this if you want to render colored emojis in my build of dmenu. Otherwise, you don't need this.
