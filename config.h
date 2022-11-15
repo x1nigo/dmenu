@@ -11,7 +11,7 @@ static const char *fonts[] = {
         "Fira Mono:pixelsize=14:regular:antialias=true:autohint=true",
         "NotoColorEmoji:pixelsize=12:regular:antialias=true:autohint=true"
 };
-static const char *prompt      = "Run:";      /* -p  option; prompt to the left of input field */
+static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
         /*     fg         bg       */
         [SchemeNorm] = { "#e6e6e6", "#282828" },
