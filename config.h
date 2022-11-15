@@ -5,7 +5,7 @@ static int topbar = 1;                      /* -b  option; if 0, dmenu appears a
 static int colorprompt = 0;                /* -p  option; if 1, prompt uses SchemeSel, otherwise SchemeNorm */
 static int fuzzy = 1;                      /* -F  option; if 0, dmenu doesn't use fuzzy matching
 */
-static const unsigned int alpha = 0xf8;
+static const unsigned int alpha = 0xf0;
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
         "Fira Mono:pixelsize=14:regular:antialias=true:autohint=true",
