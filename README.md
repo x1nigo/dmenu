@@ -4,12 +4,6 @@ My build of the suckless, dynamic menu.
 ## Patches
 - `alpha` (transparency)
 - `caseinsensitive` (looks for matches, regardless of case sensitivity)
-- `fuzzyhighlight` (highlights matched letters)
-- `fuzzymatch` (matches letters even when not consecutive)
-- `grid` (adds grid layout)
-- `gridnav` (makes navigating the grid easier)
-- `lineheight` (user can determine line height)
-- `listfullwidth` (adds colors/indentation with the prompt)
 - `mousesupport` (adds selection via mouse)
 
 ## Requirements
