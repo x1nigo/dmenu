@@ -1045,10 +1045,10 @@ main(int argc, char *argv[])
  			if (lines == 0) lines = 1;
  		} else if (!strcmp(argv[i], "-l")) { /* number of lines in grid */
 			lines = atoi(argv[++i]);
-			if (columns == 0) columns = 1;
 		} else if (!strcmp(argv[i], "-h")) { /* minimum height of one menu line */
  			lineheight = atoi(argv[++i]);
  			lineheight = MAX(lineheight, min_lineheight);
+ 			if (columns == 0) columns = 1;
  		} else if (!strcmp(argv[i], "-m"))
 			mon = atoi(argv[++i]);
 		else if (!strcmp(argv[i], "-x"))   /* window x offset */
