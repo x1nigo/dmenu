@@ -5,14 +5,14 @@ static int topbar = 1;                      /* -b  option; if 0, dmenu appears a
 static const unsigned int alpha = 0xff;     /* Amount of opacity. 0xff is opaque             */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-        "monospace:pixelsize=14:regular:antialias=true:autohint=true",
-        "NotoColorEmoji:pixelsize=14:regular:antialias=true:autohint=true"
+        "monospace:size=10:regular:antialias=true:autohint=true",
+        "NotoColorEmoji:size=8:regular:antialias=true:autohint=true"
 };
 static const char *prompt      = "Run:";      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { "#d7d7d7", "#1d2021" },
-	[SchemeSel]  = { "#1c1f24", "#3071db" },
+	[SchemeSel]  = { "#1c1f24", "#ff5555" },
 	[SchemeOut]  = { "#000000", "#00ffff" },
 };
 
