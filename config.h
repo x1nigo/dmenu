@@ -6,7 +6,7 @@ static const unsigned int alpha = 0xdf;     /* Amount of opacity. 0xff is opaque
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
         "monospace:size=10:regular:antialias=true:autohint=true",
-        "NotoColorEmoji:size=8:regular:antialias=true:autohint=true"
+        "NotoColorEmoji:pixelsize=8:regular:antialias=true:autohint=true"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
