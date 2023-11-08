@@ -4,7 +4,7 @@
 static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
 static const unsigned int alpha = 0xff;     /* Amount of opacity. 0xff is opaque             */
 /* -fn option overrides fonts[0]; default X11 font or font set */
-static const int user_bh = 10;               /* add an defined amount of pixels to the bar height */
+static const int user_bh = 8;               /* add an defined amount of pixels to the bar height */
 
 static const char *fonts[] = {
         "monospace:size=10:regular:antialias=true:autohint=true",
@@ -13,8 +13,8 @@ static const char *fonts[] = {
 static const char *prompt = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#282828", "#1d2021" },
-	[SchemeSel]  = { "#d7d7d7", "#1d2021" },
+	[SchemeNorm] = { "#d7d7d7", "#1d2021" },
+	[SchemeSel]  = { "#d7d7d7", "#0f2837" },
 	[SchemeOut]  = { "#000000", "#00ffff" },
 };
 
