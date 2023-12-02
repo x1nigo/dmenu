@@ -14,7 +14,7 @@ static const char *prompt = NULL;      /* -p  option; prompt to the left of inpu
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { "#d7d7d7", "#181a1b" },
-	[SchemeSel]  = { "#d7d7d7", "#0f2837" },
+	[SchemeSel]  = { "#d7d7d7", "#181e1f" },
 	[SchemeOut]  = { "#000000", "#00ffff" },
 };
 
