@@ -6,14 +6,14 @@ static int colorprompt = 0;                /* -p  option; if 1, prompt uses Sche
 static const unsigned int alpha = 0xf0;     /* Amount of opacity. 0xff is opaque             */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-        "monospace:size=10:regular:antialias=true:autohint=true",
+        "monospace:bold:size=10:antialias=true:autohint=true",
         "NotoColorEmoji:pixelsize=8:regular:antialias=true:autohint=true"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*               fg         bg       */
 	[SchemeNorm] = { "#ebdbb2", "#121618" },
-	[SchemeSel]  = { "#ebdbb2", "#500" },
+	[SchemeSel]  = { "#000", "#800" },
 	[SchemeOut]  = { "#000000", "#00ffff" },
 };
 
