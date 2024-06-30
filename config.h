@@ -2,12 +2,11 @@
 /* Default settings; can be overriden by command line. */
 
 static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
-static int colorprompt = 0;                /* -p  option; if 1, prompt uses SchemeSel, otherwise SchemeNorm */
+static int colorprompt = 0;                 /* -p  option; if 1, prompt uses SchemeSel, otherwise SchemeNorm */
 static const unsigned int alpha = 0xf0;     /* Amount of opacity. 0xff is opaque             */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-        "monospace:bold:size=10:antialias=true:autohint=true",
-        "NotoColorEmoji:pixelsize=8:regular:antialias=true:autohint=true"
+		"monospace:size=10", "NotoColorEmoji:pixelsize=8"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
