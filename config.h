@@ -2,8 +2,7 @@
 /* Default settings; can be overriden by command line. */
 
 static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
-static int colorprompt = 0;                 /* -p  option; if 1, prompt uses SchemeSel, otherwise SchemeNorm */
-static const unsigned int alpha = 0xf0;     /* Amount of opacity. 0xff is opaque             */
+static const unsigned int alpha = 0xef;     /* Amount of opacity. 0xff is opaque             */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
 		"monospace:size=10", "NotoColorEmoji:pixelsize=8"
@@ -12,7 +11,7 @@ static const char *prompt      = NULL;      /* -p  option; prompt to the left of
 static const char *colors[SchemeLast][2] = {
 	/*               fg         bg       */
 	[SchemeNorm] = { "#ebdbb2", "#121618" },
-	[SchemeSel]  = { "#1d2021", "#ebdbb2" },
+	[SchemeSel]  = { "#ebdbb2", "#0f2837" },
 	[SchemeOut]  = { "#000000", "#00ffff" },
 };
 
