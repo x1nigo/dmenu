@@ -7,6 +7,7 @@ static int colorprompt = 0;                 /* -p  option; if 1, prompt uses Sch
 static const unsigned int alpha = 0xff;     /* Amount of opacity. 0xff is opaque             */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
+		"sans:size=10:antialias=true:autohint=true",
 		"monospace:size=10:antialias=true:autohint=true",
 		"NotoColorEmoji:pixelsize=8:antialias=true:autohint=true",
 		"Mononoki Nerd Font:size=10:antialias=true:autohint=true"
@@ -14,12 +15,12 @@ static const char *fonts[] = {
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*                        fg         bg       */
-	[SchemeNorm]          = { "#d7d7d7", "#1d2023" },
+	[SchemeNorm]          = { "#d7d7f7", "#21242b" },
 	[SchemeSel]           = { "#282828", "#5757d7" },
- 	[SchemeSelHighlight]  = { "#57d7f7", "#000000" },
+ 	[SchemeSelHighlight]  = { "#57d7f7", "#1d2023" },
  	[SchemeNormHighlight] = { "#8787f7", "#282828" },
 	[SchemeOut]           = { "#000000", "#00ffff" },
- 	[SchemeMid]           = { "#d7d7d7", "#121618" },
+ 	[SchemeMid]           = { "#d7d7f7", "#1d2023" },
 };
 
 static const unsigned int alphas[SchemeLast][2] = {
@@ -31,7 +32,7 @@ static const unsigned int alphas[SchemeLast][2] = {
 static unsigned int lines      = 0;
 static unsigned int columns    = 0;
 /* -h option; minimum height of a menu line */
-static unsigned int lineheight = 28;
+static unsigned int lineheight = 26;
 static unsigned int min_lineheight = 8;
 
 /*
