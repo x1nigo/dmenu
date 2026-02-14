@@ -3,13 +3,9 @@
 dmenu \- dynamic menu
 .SH SYNOPSIS
 .B dmenu
-.RB [ \-bFfivP ]
-.RB [ \-g
-.IR columns ]
+.RB [ \-bfiv ]
 .RB [ \-l
 .IR lines ]
-.RB [ \-h
-.IR height ]
 .RB [ \-m
 .IR monitor ]
 .RB [ \-p
@@ -24,13 +20,9 @@ dmenu \- dynamic menu
 .IR color ]
 .RB [ \-sf
 .IR color ]
-.RB [ \-nhb
+.RB [ \-ob
 .IR color ]
-.RB [ \-nhf
-.IR color ]
-.RB [ \-shb
-.IR color ]
-.RB [ \-shf
+.RB [ \-of
 .IR color ]
 .RB [ \-w
 .IR windowid ]
@@ -52,9 +44,6 @@ which lists programs in the user's $PATH and runs the result in their $SHELL.
 .B \-b
 dmenu appears at the bottom of the screen.
 .TP
-.B \-F
-disables fuzzy matching.
-.TP
 .B \-f
 dmenu grabs the keyboard before reading stdin if not reading from a tty. This
 is faster, but will lock up X until stdin reaches end\-of\-file.
@@ -62,17 +51,8 @@ is faster, but will lock up X until stdin reaches end\-of\-file.
 .B \-i
 dmenu matches menu items case insensitively.
 .TP
-.B \-P
-dmenu will not directly display the keyboard input, but instead replace it with dots. All data from stdin will be ignored.
-.TP
-.BI \-g " columns"
-dmenu lists items in a grid with the given number of columns.
-.TP
 .BI \-l " lines"
-dmenu lists items in a grid with the given number of lines.
-.TP
-.BI \-h " height"
-dmenu uses a menu line of at least 'height' pixels tall, but no less than 8.
+dmenu lists items vertically, with the given number of lines.
 .TP
 .BI \-m " monitor"
 dmenu is displayed on the monitor number supplied. Monitor numbers are starting
@@ -99,17 +79,11 @@ defines the selected background color.
 .BI \-sf " color"
 defines the selected foreground color.
 .TP
-.BI \-nhb " color"
-defines the normal highlight background color.
+.BI \-ob " color"
+defines the outline background color (for multiple selection).
 .TP
-.BI \-nhf " color"
-defines the normal highlight foreground color.
-.TP
-.BI \-shb " color"
-defines the selected highlight background color.
-.TP
-.BI \-shf " color"
-defines the selected highlight foreground color.
+.BI \-of " color"
+defines the outline foreground color (for multiple selection).
 .TP
 .B \-v
 prints version information to stdout, then exits.
