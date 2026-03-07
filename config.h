@@ -6,6 +6,7 @@ static const unsigned int alpha = 0xee;     /* Amount of opacity. 0xff is opaque
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
 	"monospace:size=10",
+	"JoyPixels:size=8",
 	"NotoColorEmoji:size=8"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
