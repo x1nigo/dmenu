@@ -5,15 +5,15 @@ static int topbar = 1;                      /* -b  option; if 0, dmenu appears a
 static const unsigned int alpha = 0xff;     /* Amount of opacity. 0xff is opaque             */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"monospace:size=10",
+	"monospace:size=10.5",
 	"JoyPixels:size=8",
 	"NotoColorEmoji:size=8"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*               fg         bg       */
-	[SchemeNorm] = { "#ebdbb2", "#121618" },
-	[SchemeSel]  = { "#ebdbb2", "#570000" },
+	[SchemeNorm] = { "#ebdbb2", "#1d2021" },
+	[SchemeSel]  = { "#ebdbb2", "#3f1803" },
 	[SchemeOut]  = { "#000000", "#00ffff" },
 };
 
